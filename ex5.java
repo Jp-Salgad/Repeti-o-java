@@ -7,23 +7,23 @@ public class ex5 {
 		Scanner leitor = new Scanner (System.in);
     
     double cc = 0;
-    double salário = 1, altura;
+    double salÃ¡rio = 1, altura;
     String sexo;
-    double média, soma = 0, mm = 0, mn = 200;
+    double mÃ©dia, soma = 0, mm = 0, mn = 200;
     int cont = 1;
     
     do {
     	
     System.out.printf("Digite seu sexo (m/f)" , cont);
     sexo = leitor.next();
-    System.out.printf("Digite o seu salário, por favor:" ,cont);
-    salário = leitor.nextDouble();
+    System.out.printf("Digite o seu salÃ¡rio, por favor:" ,cont);
+    salÃ¡rio = leitor.nextDouble();
     System.out.printf("Agora, por favor, digite a sua altura:" , cont);
     altura = leitor.nextDouble();
     cont++;
     
-    soma = soma + salário;
-    média = soma/2;
+    soma = soma + salÃ¡rio;
+    mÃ©dia = soma/20;
     
     if (altura > mm) {
     	mm = altura;
@@ -31,17 +31,17 @@ public class ex5 {
     else if (altura < mn) {
     	mn = altura;
     }
-    if (salário <= 1000 && sexo == "f") {
+    if (salÃ¡rio <= 1000 && sexo == "f") {
     	cc = cc + 1;
 		
     }
     }
     
-    while (cont <= 2);
+    while (cont <= 20);
     
-    System.out.println("A média dos salários é:" +média);
-    System.out.println("A maior altura é:" +mm+ "E a menor altura é de:" +mn);
-    System.out.println("A quantidade de mulheres com salário até de R$1.000,00 é de:" +cc);
+    System.out.println("A mÃ©dia dos salÃ¡rios Ã©:" +mÃ©dia);
+    System.out.println("A maior altura Ã©:" +mm+ "E a menor altura Ã© de:" +mn);
+    System.out.println("A quantidade de mulheres com salÃ¡rio atÃ© de R$1.000,00 Ã© de:" +cc);
 		
 		
 		
