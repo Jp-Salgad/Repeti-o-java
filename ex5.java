@@ -26,23 +26,23 @@ public class ex5 {
     média = soma/20;
     
     if (altura > mm) {
-    	mm = altura;
-    }
-    else if (altura < mn) {
-    	mn = altura;
-    }
-    if (salário <= 1000 && sexo == "f") {
-    	cc = cc + 1;
-		
-    }
-    }
+    	mm = altura;}
     
+    if (altura < mn) {
+    	mn = altura;}
+    
+    if (salário <= 1000 && sexo.contentEquals ("f")) {
+    	cc = cc +1;}
+    cc++;
+    
+    }
+
     while (cont <= 20);
-    
+    System.out.println("==============================");
     System.out.println("A média dos salários é:" +média);
-    System.out.println("A maior altura é:" +mm+ "E a menor altura é de:" +mn);
+    System.out.println("A maior altura é:" +mm+ " E a menor altura é de:" +mn);
     System.out.println("A quantidade de mulheres com salário até de R$1.000,00 é de:" +cc);
-		
+    System.out.println("==============================");	
 		
 		
 		
@@ -52,5 +52,5 @@ public class ex5 {
 		
 		
     
-}
+    }
 }
